@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     private String output,input,newOutput;
 
+    private Button back;
     private Button button0,button1,button2,button3,button4,button5,button6,button7,button8,button9,buttonAdd,
             buttonSub,buttonDivsion,buttonMultiply,buttonPoint,buttonPower,buttonEqual,buttonPercent,buttonClear;
 
@@ -43,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         buttonPercent=findViewById(R.id.percentage_btn);
         buttonPoint=findViewById(R.id.btnpoint);
         buttonPower=findViewById(R.id.power_btn);
+        back=findViewById(R.id.back_btn);
 
 
     }
@@ -72,6 +74,15 @@ public class MainActivity extends AppCompatActivity {
             case "=":
                 solve();
                 break;
+            case "":
+                try {
+                    String newText=input.substring(0,input.length()-1);
+                    input=newText;
+                    break;
+                }
+                catch ( Exception e)
+                {}
+
             case "%":
                 input+="%";
                 Double d = Double.parseDouble(inputText.getText().toString())/100;

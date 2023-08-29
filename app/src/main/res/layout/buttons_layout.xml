@@ -7,10 +7,39 @@
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:rowCount="5"
+        android:rowCount="6"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:columnCount="4">
+
+        <Button
+            android:id="@+id/power_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:text="^"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:onClick="onButtonClicked"/>
+
+
+        <Button
+            android:id="@+id/back_btn"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_rowWeight="1"
+            android:background="@drawable/baseline_backspace_24"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:onClick="onButtonClicked"/>
 
         <Button
             android:id="@+id/clear_btn"
@@ -19,7 +48,7 @@
             android:text="C"
             android:textColor="@color/white"
             android:textSize="25sp"
-            android:layout_row="0"
+            android:layout_row="1"
             android:layout_column="0"
             android:layout_columnWeight="1"
             android:onClick="onButtonClicked"/>
@@ -31,7 +60,7 @@
             android:text="^"
             android:textColor="@color/white"
             android:textSize="25sp"
-            android:layout_row="0"
+            android:layout_row="1"
             android:layout_column="1"
             android:layout_columnWeight="1"
             android:onClick="onButtonClicked"/>
@@ -43,7 +72,7 @@
             android:text="%"
             android:textColor="@color/white"
             android:textSize="25sp"
-            android:layout_row="0"
+            android:layout_row="1"
             android:layout_column="2"
             android:layout_columnWeight="1"
             android:onClick="onButtonClicked"/>
@@ -55,7 +84,7 @@
             android:text="/"
             android:textColor="@color/white"
             android:textSize="25sp"
-            android:layout_row="0"
+            android:layout_row="1"
             android:layout_column="3"
             android:layout_columnWeight="1"
             android:onClick="onButtonClicked"/>
@@ -67,7 +96,7 @@
             android:text="7"
             android:textColor="@color/white"
             android:textSize="25sp"
-            android:layout_row="1"
+            android:layout_row="2"
             android:layout_column="0"
             android:layout_columnWeight="1"
             android:onClick="onButtonClicked"/>
@@ -79,7 +108,7 @@
             android:text="8"
             android:textColor="@color/white"
             android:textSize="25sp"
-            android:layout_row="1"
+            android:layout_row="2"
             android:layout_column="1"
             android:layout_columnWeight="1"
             android:onClick="onButtonClicked"/>
@@ -91,7 +120,7 @@
             android:text="9"
             android:textColor="@color/white"
             android:textSize="25sp"
-            android:layout_row="1"
+            android:layout_row="2"
             android:layout_column="2"
             android:layout_columnWeight="1"
             android:onClick="onButtonClicked"/>
@@ -103,7 +132,7 @@
             android:text="*"
             android:textColor="@color/white"
             android:textSize="25sp"
-            android:layout_row="1"
+            android:layout_row="2"
             android:layout_column="3"
             android:layout_columnWeight="1"
             android:onClick="onButtonClicked"/>
@@ -115,7 +144,7 @@
             android:text="4"
             android:textColor="@color/white"
             android:textSize="25sp"
-            android:layout_row="2"
+            android:layout_row="3"
             android:layout_column="0"
             android:layout_columnWeight="1"
             android:onClick="onButtonClicked"/>
@@ -127,7 +156,7 @@
             android:text="5"
             android:textColor="@color/white"
             android:textSize="25sp"
-            android:layout_row="2"
+            android:layout_row="3"
             android:layout_column="1"
             android:layout_columnWeight="1"
             android:onClick="onButtonClicked"/>
@@ -139,7 +168,7 @@
             android:text="6"
             android:textColor="@color/white"
             android:textSize="25sp"
-            android:layout_row="2"
+            android:layout_row="3"
             android:layout_column="2"
             android:layout_columnWeight="1"
             android:onClick="onButtonClicked"/>
@@ -151,7 +180,7 @@
             android:text="-"
             android:textColor="@color/white"
             android:textSize="25sp"
-            android:layout_row="2"
+            android:layout_row="3"
             android:layout_column="3"
             android:layout_columnWeight="1"
             android:onClick="onButtonClicked"/>
@@ -163,7 +192,7 @@
             android:text="1"
             android:textColor="@color/white"
             android:textSize="25sp"
-            android:layout_row="3"
+            android:layout_row="4"
             android:layout_column="0"
             android:layout_columnWeight="1"
             android:onClick="onButtonClicked"/>
@@ -175,7 +204,7 @@
             android:text="2"
             android:textColor="@color/white"
             android:textSize="25sp"
-            android:layout_row="3"
+            android:layout_row="4"
             android:layout_column="1"
             android:layout_columnWeight="1"
             android:onClick="onButtonClicked"/>
@@ -187,7 +216,7 @@
             android:text="3"
             android:textColor="@color/white"
             android:textSize="25sp"
-            android:layout_row="3"
+            android:layout_row="4"
             android:layout_column="2"
             android:layout_columnWeight="1"
             android:onClick="onButtonClicked"/>
@@ -199,7 +228,7 @@
             android:text="+"
             android:textColor="@color/white"
             android:textSize="25sp"
-            android:layout_row="3"
+            android:layout_row="4"
             android:layout_column="3"
             android:layout_columnWeight="1"
             android:onClick="onButtonClicked"/>
@@ -211,7 +240,7 @@
             android:text="0"
             android:textColor="@color/white"
             android:textSize="25sp"
-            android:layout_row="4"
+            android:layout_row="5"
             android:layout_column="0"
             android:layout_columnWeight="1"
             android:onClick="onButtonClicked"/>
@@ -223,7 +252,7 @@
             android:text="."
             android:textColor="@color/white"
             android:textSize="25sp"
-            android:layout_row="4"
+            android:layout_row="5"
             android:layout_column="1"
             android:layout_columnWeight="1"
             android:onClick="onButtonClicked"/>
@@ -235,7 +264,7 @@
             android:text="="
             android:textColor="@color/white"
             android:textSize="25sp"
-            android:layout_row="4"
+            android:layout_row="5"
             android:layout_column="2"
             android:layout_columnWeight="1"
             android:onClick="onButtonClicked"
